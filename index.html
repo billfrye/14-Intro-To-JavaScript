@@ -61,7 +61,19 @@
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+                {% for Sighting in Sightings %}
+                <tr>
+                  <td>{{ Sighting.date }}</td>
+                  <td>{{ Sighting.city }}</td>
+                  <td>{{ Sighting.state }}</td>
+                  <td>{{ Sighting.county }}</td>
+                  <td>{{ Sighting.shape }}</td>
+                  <td>{{ Sighting.duration }}</td>
+                  <td>{{ Sighting.comments }}</td>
+                  </tr>
+                {% endfor %}                
+              </tbody>
             </table>
           </div>
         </div>
