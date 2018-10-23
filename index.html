@@ -16,7 +16,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
+            <img class="nav-ufo" src="../static/images/ufo.svg">
           </a>
         </div>
       </div>
@@ -62,8 +62,7 @@
                 </tr>
               </thead>
               <tbody>
-                {% for Sighting in Sightings %}
-                <tr>
+                <!-- <tr>
                   <td>{{ Sighting.date }}</td>
                   <td>{{ Sighting.city }}</td>
                   <td>{{ Sighting.state }}</td>
@@ -71,8 +70,7 @@
                   <td>{{ Sighting.shape }}</td>
                   <td>{{ Sighting.duration }}</td>
                   <td>{{ Sighting.comments }}</td>
-                  </tr>
-                {% endfor %}                
+                  </tr> -->
               </tbody>
             </table>
           </div>
@@ -84,8 +82,16 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+  <script src="../app/data.js"></script>
+  <!-- <script src="../app/routes.py"></script> -->
+  <script>
+    function ready() {
+      alert('DOM is ready');
+    }
+  
+    document.addEventListener("DOMContentLoaded", ready);
+  </script>
+  
 </body>
 
 </html>
