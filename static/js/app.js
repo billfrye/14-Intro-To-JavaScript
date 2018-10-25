@@ -26,11 +26,11 @@ function filterByDate(filterDate,tableData) {
     return filtered;
 }
 
-var resetFilter = d3.select("#reset_btn");
+// var resetFilter = d3.select("#reset_btn");
 
-resetFilter.on("click", function() {
-    tableData = loadTableData(data);
-});
+// resetFilter.on("click", function() {
+//     tableData = loadTableData(data);
+// });
 
 // Select the submit button
 var submit = d3.select("#filter-btn");
